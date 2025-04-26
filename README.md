@@ -1,59 +1,45 @@
-<<<<<<< HEAD
-# sistema-triagem-saude
-Trabalho para disciplina de Segurança e Usabilidade em Sistemas de Informação em Saúde do Mestrado.
-=======
-# React + TypeScript + Vite
+# Sistema de Triagem em Unidade Básica de Saúde
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Projeto desenvolvido para a disciplina de Segurança e Usabilidade em Sistemas de Informação em Saúde - INS310001-41010084MP (20251)**
 
-Currently, two official plugins are available:
+Este é um projeto simples de triagem em saúde, desenvolvido para fins acadêmicos. O sistema é feito utilizando React, TypeScript e JavaScript, e utiliza dados fictícios para simulação.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Descrição do Projeto
 
-## Expanding the ESLint configuration
+O Sistema de Triagem em Unidade Básica de Saúde tem como objetivo auxiliar profissionais de saúde no acompanhamento e triagem de pacientes. Ele possui as seguintes funcionalidades:
+- Exibição de pacientes em atendimento
+- Visualização de agendamentos e calendários
+- Interface de triagem para novos pacientes
+- Relatórios e acesso ao prontuário de pacientes
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### Funcionalidades
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- **Tela Inicial**: Exibe dados sobre os pacientes, como status e prioridade, e permite o acesso a funcionalidades como triagem, prontuário e relatórios.
+- **Triagem**: Permite registrar novos pacientes com dados de triagem.
+- **Calendário de Agendamentos**: Mostra os agendamentos para os próximos dias, com a capacidade de visualizar detalhes das consultas agendadas.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Página Inicial (Home)
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
->>>>>>> f37a3e6 (initial)
+A página inicial do sistema exibe informações importantes sobre os pacientes e o status da triagem. Ela é composta por:
+
+- **Cartões de Dashboard**: Mostra informações sobre o número de pacientes atendidos hoje, emergências, e tempo médio de espera.
+- **Lista de Pacientes em Atendimento**: Exibe uma tabela com os pacientes que estão sendo atendidos, incluindo nome, prioridade e status.
+- **Links de Atalho**: Facilita o acesso às páginas de triagem e prontuário.
+
+### Exemplo de Tela
+
+![Home Page](./images/home.png)
+
+## Tecnologias Usadas
+
+- **React** (com TypeScript)
+- **JavaScript** (para dados falsos e interação)
+- **TailwindCSS** (para a estilização da interface)
+- **react-calendar** (para o calendário de agendamentos)
+
+## Como Rodar o Projeto Localmente
+
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/your-username/sistema-triagem-saude.git
